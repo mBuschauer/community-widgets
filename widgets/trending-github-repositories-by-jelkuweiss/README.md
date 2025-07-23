@@ -7,7 +7,7 @@ The data is sourced from the [OSS Insights](https://ossinsight.io/) trend API, g
 - type: custom-api
           title: Trending Repositories
           cache: 24h 
-          url: 'https://api.ossinsight.io/v1/trends/repos/?period=past_24_hours&language=All'
+          url: 'https://api.ossinsight.io/v1/trends/repos/?period=${PERIOD}&language=${LANGUAGE}'
           template: |
             <ul class="list list-gap-10 collapsible-container" data-collapse-after="3">
               {{ range .JSON.Array "data.rows"}}
