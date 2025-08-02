@@ -36,8 +36,8 @@ Add the following to your dashboard configuration:
             {{ $hasPromo := gt (len (.Array "promotions.promotionalOffers")) 0 }}
             {{ if and $hasPromo (eq $price "0") }}
               {{ $gamePage := .String "productSlug" }}
-              {{ if gt (len (.Array "catalogNs.mappings")) 0 }}
-                {{ $gamePage = .String "catalogNs.mappings.0.pageSlug" }}
+              {{ if gt (len (.Array "offerMappings")) 0 }}
+                {{ $gamePage = .String "offerMappings.0.pageSlug" }}
               {{end }}
               <a href="https://store.epicgames.com/en-US/p/{{ $gamePage }}" target="_blank" class="card">
                 {{ $title := .String "title" }}
