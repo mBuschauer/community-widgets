@@ -223,4 +223,4 @@
 - `DASHDOT_URL` - the dashdot url (like `http://192.168.0.22:80`).
 
 ## Cores Expanded
-![](preview.png)
+![](expanded.png)
